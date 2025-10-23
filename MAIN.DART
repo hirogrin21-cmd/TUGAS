@@ -62,9 +62,13 @@ class MyProfilePage extends StatelessWidget {
           CircleAvatar(
             radius: 60,
             backgroundColor: Colors.grey[200],
-            backgroundImage: NetworkImage(
-              'https://placehold.co/150x150/663399/FFFFFF?text=RA' // Placeholder inisial
-            ),
+            // --- KODE DIGANTI DI SINI ---
+            // Yg lama: backgroundImage: NetworkImage(
+            //   'https://placehold.co/150x150/663399/FFFFFF?text=RA' // Placeholder inisial
+            // ),
+            // Yg baru: Pakai aset lokal
+            backgroundImage: AssetImage('assets/images/pasfoto.jpg'),
+            // --- SELESAI GANTI ---
           ),
           
           SizedBox(height: 16),
@@ -201,4 +205,5 @@ class InfoRow extends StatelessWidget {
     );
   }
 }
+
 
